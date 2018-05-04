@@ -3,13 +3,41 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-        <script src="js.js"></script>
         <link type="text/css" rel="stylesheet" href="css.css">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link type="text/css" rel="stylesheet" href="css (1).css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+        
+        <script src="js.js"></script>
         <title>웹</title>
     </head>
     <body>
-        <table>
+        <div>
+            <br>
+            <h1>싸지방</h1><br>
+            <ul>
+                <li onclick="home()"><strong>홈</strong></li>
+                <li>전역일</li>
+                <li><a href="https://blog.iwanhae.ga/content/images/2017/11/DNSCHANGE.bat">DNS</a></li>
+                <li onclick="bor()">브라우저</li>
+            </ul>
+            <br>
+        </div>
+        <div id="home"><pre>본 페이지는 싸지방에서 유용하게 사용할 수 있는 유틸리티를 모아둔 페이지입니다.
+<span>전역일</span>은 전역일을 계산할 수 있으며 <span>DNS</span>는 싸지방에서 Google 및 Youtube에 접속이 불가능할때 접속이 가능하도록 해줍니다
+<span>브라우저</span>는 말 그대로 각종 브라우저들의 다운로드 링크를 모아둔것 입니다
+
+※싸지방 꿀팁※
+불법 웹툰 미리보기 사이트 (ex:toonkor.com)등 불법 유해 차단 사이트로 넘어가질 경우 http://toonkor.com 이 아닌 https://toonkor.com 으로 접속하면
+정상적으로 사이트 접속이 가능합니다 단 접속하려는 사이트가 https 인증서를 지원할 경우에만 가능합니다 또한 https로 접속하는 사이트는 접속해도
+그 기록이 싸지방 이용 로그에 남지 않습니다 보안등의 이유로 파일 업로드가 차단되어있는데 https로 접속 할 경우 업로드 또한 가능해집니다
+https는 http와 다르게 서버에서 데이터를 주고 받아오는 과정에서 암호화가 이뤄져 현재 국내 장비로는 막거나 내용을 보는게 불가능합니다</pre></div>
+        <div class="container">
+        <table class="table">
             <tr>
                 <td>이름</td>
                 <td>입대일</td>
@@ -28,8 +56,38 @@
             <tr>
                 <td>우영스</td>
                 <td>NULL</td>
-                <td id="wo">NULL</td>
+                <td id="wo">Undefine</td>
             </tr>
         </table>
+            </div>
+        <div id="bor" class="container">
+                <table class="table">
+                    <thead>
+                        <th>이름</th>
+                        <th>특징</th>
+                        <th>다운로드</th>
+                    </thead>
+                    <tbody>
+                        <td>웨일</td>
+                        <td>모바일창(투명도 조절가능) , 빠른속도</td>
+                        <td><a href="http://update.whale.naver.net/downloads/installers/WhaleSetup.exe">다운로드</a></td>
+                    </tbody>
+                    <tbody>
+                        <td>오페라</td>
+                        <td>무료 VPN , 비디오 팝업 기능</td>
+                        <td><a href="https://net.geo.opera.com/opera/stable/windows?http_referrer=https://search.naver.com/search.naver_where_nexearch_query_%EC%98%A4%ED%8E%98%EB%9D%BC+%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80_ie_utf8_sm_tab_she_qdt_0&utm_source=naver_via_opera_com&utm_medium=ose&utm_campaign=naver_ose_via_opera_com_https&utm_term=%ec%98%a4%ed%8e%98%eb%9d%bc+%eb%b8%8c%eb%9d%bc%ec%9a%b0%ec%a0%80&utm_lastpage=opera.com/&dl_token=87665707">다운로드</a></td>
+                    </tbody>
+                    <tbody>
+                        <td>파이어폭스</td>
+                        <td>빠른속도 , 적은 메모리 사용량</td>
+                        <td><a href="https://stubdownloader.cdn.mozilla.net/builds/firefox-stub/ko/win/c4c205798786ba9fc22674a2561358157232cb5a482c1495332f58eaf499d4c3/Firefox%20Installer.exe">다운로드</a></td>
+                    </tbody>
+                    <tbody>
+                        <td>Vivaldi</td>
+                        <td>빠른속도 , 완벽한 최적화 , 가벼움</td>
+                        <td><a href="https://downloads.vivaldi.com/stable/Vivaldi.1.15.1147.36.exe">다운로드</a></td>
+                    </tbody>
+                </table>
+            </div>
     </body>
 </html>

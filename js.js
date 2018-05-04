@@ -19,3 +19,11 @@ function dday(y,m,d,id){
         },1000);
     
 }
+
+function bor(){
+    document.getElementById("bor").style.display="block";
+}
+ 
+function home(){
+    document.getElementById("bor").style.display="none";
+}
