@@ -21,10 +21,10 @@ html{
 #card{
         width:800px;
     height:500px;
-    background: white;
+    background: rgb(254,233,105);
     border:1px solid white;
-    border-radius:5%;
-    margin: 0px auto;
+    border-radius:5em;
+    margin: 30px auto;
     text-align: center;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
     transform-style: preserve-3d;
@@ -49,6 +49,21 @@ html{
     background-position: center;
 }
 
+.face2{
+    display: none;
+    position: absolute;
+    margin: 0px auto;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+    background-image: url("li.gif");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
 .back {
   display: block;
   transform: rotateY(180deg);
@@ -57,13 +72,24 @@ html{
   text-align: center;
   opacity: .7;
   background: #F9F3E4;
-    border-radius:5%;
+    border-radius:5em;
+}
+
+.back2 {
+  display: none;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+  opacity: .7;
+  background: #F9F3E4;
+    border-radius:5em;
 }
 
 
 
 .arrow_box {
-    margin: 0 auto;
+    margin: -25px auto;
 	position: relative;
     top:410px;
 	background: rgb(254,233,105);
@@ -107,7 +133,39 @@ html{
 
 #title{
     position: relative;
-    top:-450px;
+    top:-500px;
     text-align: center;
+    color:brown;
+    font-size: 35px;
 }
 
+#title2{
+    
+}
+
+#title3{
+    position: relative;
+    font-size:15px;
+    top:-15px;
+}
+
+.butt{
+    width:150px;
+    height:30px;
+    background-color:white;
+    font-size:15px;
+    color:black;
+    border-radius:50em;
+    text-align: center;
+    border:1px;
+}
+
+.butt:hover{
+    background-color:coral;
+}
+
+#box2{
+    text-align: center;
+    position: relative;
+    top:15px;
+}
