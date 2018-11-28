@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <!-- CSS -->
+        <link rel="stylesheet" href="css.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+        <!--     -->
+        
+        <!-- JavaScript -->
+        
+        <!--            -->
+        <title>Short Cut</title>
+    </head>
+    
+    <body>
+        <header>
+            <span class="home">Short Cut</span>
+            <nav>
+                <li class="btu">Facebook</li>
+                <li class="btu">Facebook</li>
+                <li class="btu">NAVER</li>
+            </nav>
+        </header>
+        <section class="backse">
+            <div class="back">
+            </div>
+            <span id="ver">Ver 0.0.1</span>
+        </section>
+        
+        
+
+<script>
+  
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : 359588748108810s,
+      cookie     : true,
+      xfbml      : true,
+      version    : 'v3.2'
+    });
+      
+    FB.AppEvents.logPageView();   
+      
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+    
+    
+function checkLoginState() {
+  FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+  });
+}
+    
+</script>
+        <div class="fb-login-button" data-max-rows="1" data-size="small" data-button-type="login_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="false"></div>
+        <fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
+    </body>
+</html>

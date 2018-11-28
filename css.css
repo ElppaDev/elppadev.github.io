@@ -1,0 +1,109 @@
+html, body, div, span, applet, object, iframe,
+p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+header{
+    color:white;
+    height: 3em;
+    width:100%;
+}
+
+header nav{
+    position: absolute;
+    right:13%;
+    top:7%;
+    font-size: 25px;
+    font-family:'Quicksand', sans-serif;
+    color:;
+    text-shadow: 1px 1px 3px black;
+}
+
+nav li{
+    margin: 0 15px;
+    display: inline;
+}
+
+nav li:first-child{
+    margin-left: 0;
+}
+
+nav li:last-child{
+    margin-right: 0;
+}
+
+.home{
+    font-family:'Quicksand', sans-serif;
+    text-shadow: 1px 1px 3px black;
+    position: relative;
+    top:100%;
+    left:10%;
+    font-size: 40px;
+}
+
+
+
+.back{
+    background-image: url(b2.jpg);
+    filter:blur(3px);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    z-index: -1;
+}
+
+.btu:hover{
+    border:1px solid azure;
+    border-radius: 0.3em;
+    box-shadow: 1px 1px 10px black;
+}
+
+#ver{
+    position: absolute;
+    font-family:'Quicksand', sans-serif;
+    top:98%;
+    right:0%;
+    color:white;
+    text-shadow: 1px 1px 3px black;
+}
