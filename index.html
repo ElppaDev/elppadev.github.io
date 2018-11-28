@@ -60,7 +60,16 @@ function checkLoginState() {
             <span id="ver">Ver 0.0.1</span>
         </section>
         
-        <div class="fb-login-button" data-max-rows="1" data-size="small" data-button-type="login_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="false"></div>
-        <fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
+        <input type="button" id= "authBtn" value="checking...." onclick="if(this.value === 'Login'){
+	//now logout
+	FB.login(function(response){
+		console.log('login =>', response)
+	});
+}else {
+	//now login
+	FB.logout(function(response){
+		console.log('logout =>', response)
+	});
+}">
     </body>
 </html>
