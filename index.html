@@ -27,6 +27,18 @@
      js.src = "https://connect.facebook.net/en_US/sdk.js";
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
+            
+            FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+                
+                FB.login(function(response) {
+  if (response.status === 'connected') {
+    console.log("로그인 성공적");
+  } else {
+    console.log("로그인 실패");
+  }
+});
+});
 </script>
         <!--            -->
         <title>Short Cut</title>
@@ -46,15 +58,6 @@
             </div>
             <span id="ver">Ver 0.0.1</span>
         </section>
-       
-        
-        
-        <div
-  class="fb-like"
-  data-share="true"
-  data-width="450"
-  data-show-faces="true">
-</div>
-        
+        <button type="button">로그인</button>
     </body>
 </html>
