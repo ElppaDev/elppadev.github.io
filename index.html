@@ -10,27 +10,7 @@
         <!--     -->
         
         <!-- JavaScript -->
-        <script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '359588748108810',
-      xfbml      : true,
-      version    : 'v3.2'
-    });
-    FB.AppEvents.logPageView();
-  };
-
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "https://connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-            
-            FB.getLoginStatus(function(response) {
-    statusChangeCallback(response);
-</script>
+        <script type="text/javascript" src="https://static.nid.naver.com/js/naveridlogin_js_sdk_2.0.0.js" charset="utf-8"></script>
         <!--            -->
         <title>Short Cut</title>
     </head>
@@ -44,11 +24,24 @@
                 <li class="btu">NAVER</li>
             </nav>
         </header>
-        <section class="backse">
-            <div class="back">
-            </div>
-            <span id="ver">Ver 0.0.1</span>
-        </section>
-        <div class="fb-login-button" data-max-rows="1" data-size="small" data-button-type="login_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="false"></div>
+        <!-- 네이버아이디로로그인 버튼 노출 영역 -->
+<div id="naverIdLogin"></div>
+<!-- //네이버아이디로로그인 버튼 노출 영역 -->
+
+<!-- 네이버아디디로로그인 초기화 Script -->
+<script type="text/javascript">
+	var naverLogin = new naver.LoginWithNaverId(
+		{
+			clientId: "TSfhvAjiPaX2bZ2zWNPn",
+			callbackUrl: "http://엘파.kr",
+			isPopup: true, /* 팝업을 통한 연동처리 여부 */
+			loginButton: {color: "green", type: 2, height: 30} /* 로그인 버튼의 타입을 지정 */
+		}
+	);
+	
+	/* 설정정보를 초기화하고 연동을 준비 */
+	naverLogin.init();
+	
+</script>
     </body>
 </html>
