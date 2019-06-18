@@ -16,37 +16,26 @@
     </head>
     
     <body>
-	    <script type="text/javascript">
-  var uid = '222754';
-  var wid = '463629';
-</script>
-<script type="text/javascript" src="//cdn.popcash.net/pop.js"></script>
-        <header>
-            <span class="home">Short Cut</span>
-            <nav>
-                <li class="btu">Facebook</li>
-                <li class="btu">Facebook</li>
-                <li class="btu">NAVER</li>
-            </nav>
-        </header>
-        <!-- 네이버아이디로로그인 버튼 노출 영역 -->
-<div id="naverIdLogin"></div>
-<!-- //네이버아이디로로그인 버튼 노출 영역 -->
+<div id="disqus_thread"></div>
+<script>
 
-<!-- 네이버아디디로로그인 초기화 Script -->
-<script type="text/javascript">
-	var naverLogin = new naver.LoginWithNaverId(
-		{
-			clientId: "TSfhvAjiPaX2bZ2zWNPn",
-			callbackUrl: "http://엘파.kr",
-			isPopup: true, /* 팝업을 통한 연동처리 여부 */
-			loginButton: {color: "green", type: 2, height: 30} /* 로그인 버튼의 타입을 지정 */
-		}
-	);
-	
-	/* 설정정보를 초기화하고 연동을 준비 */
-	naverLogin.init();
-	
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://elppadev.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
 </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
     </body>
 </html>
