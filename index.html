@@ -1,128 +1,45 @@
 <!DOCTYPE html>
+
 <html lang="ko">
 
 <head>
-    <title>엔에스테크윈 특가 제품 페이지</title>
     <meta charset="utf-8">
-    <meta name="author" content="pixelhint.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>테스트</title>
 
+    <!-- CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!--     -->
+
+    <!-- JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!--            -->
 
 </head>
 
 <body>
-
-    <header>
-        <div class="wrapper">
-            <a href="#"><img src="img/logo.png" class="h_logo" alt="Blogin" title=""></a>
-            <nav>
-                <ul class="main_nav">
-                    <li class="current"><a href="#">NEC</a></li>
-                    <li><a href="index2.html">HITACHI</a></li>
-                </ul>
-            </nav>
+    <nav class="navbar navbar-expand-md bg-light navbar-light">
+        <a class="navbar-brand" href="#">NSwin</a>
+        <button class="navber-toggler" type="button" data-toggle="collapse" data-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+            <ui class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">NEC 제품</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">HITACHI 제품</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="intent://plusfriend/talk/chat/@nswin">온라인 견적문의 바로가기</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tel:16440155">문의 전화 바로가기</a>
+                </li>
+            </ui>
         </div>
-    </header><!-- Header End -->
-    <section class="main wrapper">
-
-        <br>
-        <p class="not">본 행사는 본체 단품 가격으로 설치비, 자재등은 별도이오니 전화 문의 부탁 드립니다.<br>
-            <br>고객님 이벤트이므로 업자 분들은 제한 되며, 별도로 문의 부탁 드립니다.</p><br>
-
-        <article>
-            <div class="article_image">
-                <a href="http://www.nswin.co.kr/product/detail.asp?category_top=1&category_sub=3&seq=165">
-                    <img src="img/pic5.jpg" alt="" title="">
-                </a>
-            </div>
-            <div class="post">
-                <h1 class="title">
-                    <a>NEC NP-V332X</a>
-                </h1>
-
-                <p>제조사 : NEC</p>
-                <p>모델명 : NP-V332X</p>
-                <p>수입원 : 효성ITX</p>
-                <p>밝 기 : 3,300ANSI</p>
-                <p>해상도 : XGA (1024*768)</p>
-                <p>특 가 : <span style="color:red">660,000원</span> (부가세포함)</p>
-                <p>문 의 : <a id="kakao" href="intent://plusfriend/talk/chat/@nswin" target="_blank">카카오톡</a> / <a id="call" href="tel:16440155" target="_blank">전화</a></p>
-
-                <a class="read_more" href="http://www.nswin.co.kr/product/detail.asp?category_top=1&category_sub=3&seq=165">제품 상세 페이지 바로가기<i class="read_more_arrow"></i> </a>
-            </div>
-        </article>
-
-        <article>
-            <div class="article_image">
-                <a href="http://www.nswin.co.kr/product/detail.asp?category_top=1&category_sub=3&seq=208">
-                    <img src="img/pic6.jpg" alt="" title="">
-                </a>
-            </div>
-
-            <div class="post">
-                <h1 class="title">
-                    <a>NEC NP-MC401X</a>
-                </h1>
-
-                <p>제조사 : NEC</p>
-                <p>모델명 : NP-MC401X</p>
-                <p>수입원 : 효성ITX</p>
-                <p>밝 기 : 4,000ANSI</p>
-                <p>해상도 : XGA (1024*768)</p>
-                <p>특 가 : <span style="color:red">770,000원</span> (부가세포함)</p>
-                <p>문 의 : <a id="kakao" href="https://pf.kakao.com/_xbDTxbj/chat" target="_blank">카카오톡</a> / <a id="call" href="tel:16440155" target="_blank">전화</a></p>
-
-                <a class="read_more" href="http://www.nswin.co.kr/product/detail.asp?category_top=1&category_sub=3&seq=208">제품 상세 페이지 바로가기<i class="read_more_arrow"></i> </a>
-            </div>
-            </div>
-        </article>
-
-        <article>
-            <div class="article_image">
-                <a href="http://www.nswin.co.kr/product/detail.asp?category_top=1&category_sub=4&seq=238">
-                    <img src="img/pic7.jpg" alt="" title="">
-                </a>
-            </div>
-            <div class="post">
-                <h1 class="title">
-                    <a>NEC NP-PE523X</a>
-                </h1>
-
-                <p>제조사 : NEC</p>
-                <p>모델명 : NP-PE523X</p>
-                <p>수입원 : 효성ITX</p>
-                <p>밝 기 : 5,200ANSI</p>
-                <p>해상도 : XGA (1024*768)</p>
-                <p>특 가 : <span style="color:red">1,050,000원</span> (부가세포함)</p>
-                <p>문 의 : <a id="kakao" href="https://pf.kakao.com/_xbDTxbj/chat" target="_blank">카카오톡</a> / <a id="call" href="tel:16440155" target="_blank">전화</a></p>
-
-                <a class="read_more" href="http://www.nswin.co.kr/product/detail.asp?category_top=1&category_sub=4&seq=238">제품 상세 페이지 바로가기<i class="read_more_arrow"></i> </a>
-            </div>
-        </article>
-
-        <nav class="pagination">
-            <a href="#" class="previous" onclick="alert('첫번째 페이지 입니다!');"><i></i>이전</a>
-            <a href="index2.html" class="next">다음<i></i></a>
-        </nav><!-- Pagination End -->
-    </section><!-- Main End -->
-    <footer>
-        <div class="wrapper">
-            <img class="logo_footer" src="img/logo_footer.png" alt="Blogin" title="">
-            <p class="rights">© 2014 Blogin.com - All Rights Reserved - Find more free Templates at <a href="http://Pixelhint.com" target="_blink">Pixelhint.com</a> </p>
-            <p class="rights">본 페이지는 오픈소스를 통해 제작 되었습니다.</p>
-            <ul class="social_profiles">
-                <li class="f"><a href="https://pf.kakao.com/_xbDTxbj/chat" target="_blink"></a></li>
-                <li class="t"><a href="tel:16440155" target="_blink"></a></li>
-            </ul>
-        </div>
-    </footer><!-- Footer End -->
-
-</body>
-
-</html>
+    </nav>
+</body></html>
