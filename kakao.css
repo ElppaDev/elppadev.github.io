@@ -9,3 +9,7 @@
 #kakaobtn{
     width:100%;
 }
+
+#honeypot{
+    display: none;
+}

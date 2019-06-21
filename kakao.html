@@ -88,30 +88,30 @@
 
     <div class="jumbotron" id="kakao">
         <p>문의 내용을 작성한뒤 캡쳐를하고 아래쪽 버튼을 눌러 보내주세요!</p>
-        <form>
+        <form id="gform" method="post" action="https://script.google.com/macros/s/AKfycbwt_DL_LJArekpyVCUS6vf58vN6P5_-7HvgMkWu3w/exec">
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
                     <span class="input-group-text">이　름</span>
                 </div>
-                <input type="text" class="form-control">
+                <input type="text" class="form-control" name="이름">
             </div>
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
                     <span class="input-group-text">연락처</span>
                 </div>
-                <input type="text" class="form-control">
+                <input type="text" class="form-control" name="연락처">
             </div>
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
                     <span class="input-group-text">이메일</span>
                 </div>
-                <input type="text" class="form-control">
+                <input type="text" class="form-control" name="이메일">
             </div>
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
                     <span class="input-group-text">상　품</span>
                 </div>
-                <select name="product" class="custom-select">
+                <select name="상품" class="custom-select">
                     <option selected>프로젝터</option>
                     <option>스크린</option>
                     <option>램프</option>
@@ -126,10 +126,13 @@
                 <div class="input-group-prepend">
                     <span class="input-group-text">내　용</span>
                 </div>
-                <textarea type="text" class="form-control" id="kakaotextarea"></textarea>
+                <textarea type="text" class="form-control" id="kakaotextarea" name="내용"></textarea>
             </div>
-            <button type="button" class="btn btn-outline-warning" id="kakaobtn" onclick="window.location.href='https://pf.kakao.com/_xbDTxbj/chat';">카카오톡 온라인 문의</button>
+            <input id="honeypot" type="text" name="발신처" value="본 메일은 엔에스테크윈 모바일 웹앱에서 발신 되었습니다" />
+            <button type="submit" class="btn btn-outline-dark" id="kakaobtn" href="https://elppadev.github.io/" onclick="alert('성공적으로 문의 하였습니다!');">문의</button>
         </form>
     </div>
 
-</body></html>
+</body>
+
+</html>
