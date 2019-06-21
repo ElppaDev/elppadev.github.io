@@ -65,7 +65,7 @@ section {
     border:0.5px solid black;
 }
 
-img{
+.slidimg{
     width: 100%;
     height: 100%;
 }
@@ -5925,6 +5925,11 @@ a.badge-dark:focus {
 }
 
 @media (min-width:992px) {
+    
+    #newsale{
+        display:none;
+    }
+    
     .hrline{
         display:none;
     }
