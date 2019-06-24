@@ -1,15 +1,41 @@
-#kakao{
+#kakao {
     text-align: center;
 }
 
-#kakaotextarea{
-    height:400px;
+#kakaotextarea {
+    height: 400px;
 }
 
-.kakaobtn{
-    width:100%;
+.kakaobtn {
+    width: 100%;
 }
 
-.honeypot{
+.honeypot {
     display: none;
 }
+
+
+.elppafooter {
+    text-align: center;
+    background-color: black;
+    margin-top: -40px;
+    height: 50px;
+    color: white;
+    font-size: 10px;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    text-decoration: none;
+}
+

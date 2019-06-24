@@ -16,7 +16,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script data-cfasync="false" type="text/javascript" src="elppajs.js"></script>
     <!--            -->
 
 </head>
@@ -88,7 +87,7 @@
     <!-- 상단 메뉴 끝 -->
 
     <div class="jumbotron" id="kakao">
-        <form id="gform" method="post" action="https://script.google.com/macros/s/AKfycbwt_DL_LJArekpyVCUS6vf58vN6P5_-7HvgMkWu3w/exec">
+        <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbwt_DL_LJArekpyVCUS6vf58vN6P5_-7HvgMkWu3w/exec">
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
                     <span class="input-group-text">이　름</span>
@@ -105,7 +104,7 @@
                 <div class="input-group-prepend">
                     <span class="input-group-text">이메일</span>
                 </div>
-                <input type="text" class="form-control" name="이메일">
+                <input type="email" class="form-control" name="이메일">
             </div>
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
@@ -128,16 +127,21 @@
                 </div>
                 <textarea type="text" class="form-control" id="kakaotextarea" name="내용"></textarea>
             </div>
-            <input class="honeypot" type="text" name="honeypot" value=""/>
-            <input class="honeypot" type="text" name="처리상태" value="처리중"/>
-            <p><button type="submit" class="btn btn-outline-dark kakaobtn">문의</button></p>
+            <input class="honeypot" type="text" name="honeypot" value="" />
+            <input class="honeypot" type="text" name="처리상태" value="처리중" />
+            <p><button class="btn btn-outline-dark kakaobtn">문의</button></p>
             <button type="button" class="btn btn-outline-warning kakaobtn" onclick="window.location.href='https://pf.kakao.com/_xbDTxbj/chat';">카카오톡 문의 바로가기</button>
-            
-            <div style="display:none" id="thankyou_message">
+            <div class="thankyou_message" style="display:none;">
                 테스트 성공적으로 메일 발송 완료!!
             </div>
         </form>
     </div>
+    <script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js">
+    </script>
+
+    <footer class="elppafooter footer-copyright text-center py-3">
+        엔에스테크윈
+    </footer>
 
 </body>
 
