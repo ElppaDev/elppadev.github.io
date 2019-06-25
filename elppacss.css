@@ -4,7 +4,7 @@
     margin-top: -40px;
     height: 50px;
     color: white;
-    font-size: 10px;
+    font-size: 13px;
 }
 
 .product {
@@ -13,16 +13,16 @@
 }
 
 a:link {
-    color: white;
+    color: darkgray;
     text-decoration: none;
 }
 
 a:visited {
-    color: white;
+    color: darkgray;
     text-decoration: none;
 }
 
 a:hover {
-    color: red;
+    color: white;
     text-decoration: none;
 }
