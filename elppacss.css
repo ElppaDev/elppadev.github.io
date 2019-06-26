@@ -161,11 +161,14 @@ h4,
 
 .navbar li a,
 .navbar .navbar-brand {
-    color: #d5d5d5 !important;
+    color: white !important;
+    position:sticky;
+    top: 0.8%;
 }
 
 .navbar-nav li a:hover {
-    color: #fff !important;
+    color: red !important;
+    background-color: black !important;
 }
 
 .navbar-nav li.active a {

@@ -18,7 +18,7 @@
     text-transform: none;
     color: inherit;
     border: 0;
-    background-color: transparent
+    background-color: transparent;
 }
 
 .hamburger.is-active:hover,
@@ -738,7 +738,7 @@
 
 .hamburger--spring-r.is-active .hamburger-inner:before {
     top: 0;
-    transition: top .1s cubic-bezier(.33333, 0, .66667, .33333) .15s, transform .13s cubic-bezier(.215, .61, .355, 1) .22s;
+    transition: top .5s cubic-bezier(.33333, 0, .66667, .33333) .15s, transform .13s cubic-bezier(.215, .61, .355, 1) .22s;
     transform: rotate(90deg)
 }
 
