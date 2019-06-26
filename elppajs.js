@@ -1,4 +1,4 @@
-function callbtn(){로 연락주시면 감사하겠습니다!
+function callbtn(){
     var fileter = "win16|win32|win64";
     console.log("함수 수행");
     if(fileter.indexOf(navigator.platform.toLowerCase()) < 0){
