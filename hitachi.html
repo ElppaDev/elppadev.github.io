@@ -8,20 +8,27 @@
     <title>엔에스테크윈 모바일 웹앱</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="elppacss.css">
+    <link rel="stylesheet" href="bootstrap.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="elppacss.css">
     <link rel="stylesheet" type="text/css" href="hamburgers.min.css">
     <!--     -->
 
     <!-- JavaScript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="elppajs.js"></script>
+    <script src="imageMapResizer.min.js"></script>
     <!--            -->
 
+    <script>
+        $(document).ready(function() {
+            $('map').imageMapResize();
+        });
+
+    </script>
 </head>
 
 <body>
@@ -29,7 +36,7 @@
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
-                <div class="navbar-toggle hamburger hamburger--spring-r hammenu" data-toggle="collapse" data-target="#myNavbar">
+                <div class="navbar-toggle hamburger hamburger--spring-r" data-toggle="collapse" data-target="#myNavbar">
                     <div class="hamburger-box">
                         <div class="hamburger-inner"></div>
                     </div>
@@ -49,41 +56,26 @@
     </nav>
     <!-- 상단 메뉴 끝 -->
 
+    <!-- 본문의 내용 시작 -->
 
-    <!-- 슬라이드 시작 -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-        </ol>
+    <img class="product" src="http://nec.mooviccom.co.kr/images/sub/projector_hitachi.jpg" usemap="#Map" border="0">
+    <map name="Map" id="Map">
+        <area shape="rect" coords="43,170,183,336" href="http://nec.mooviccom.co.kr/product/detail.asp?category_top=1&category_sub=4&seq=259" />
+        <!-- 추가 제품 구역 
+            <area shape="rect" coords="좌표" href="링크"/>
+            본 주석을 풀어서 좌표와 링크를 추가하세요-->
+    </map>
 
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <img class="slidimg" src="http://nec.mooviccom.co.kr/images/main/main_visual01.jpg" alt="nec" onclick="slidopen('nec')">
-            </div>
 
-            <div class="item">
-                <img class="slidimg" src="http://nec.mooviccom.co.kr/images/main/main_visual02.jpg" alt="hita" onclick="slidopen('hita')">
-            </div>
-        </div>
 
-        <!-- Left and right controls -->
-        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        </a>
-        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        </a>
-    </div>
 
-    <div class="jumbotron">
-        본문 내용
-    </div>
+    <!-- 본문의 내용 종료 -->
 
-    <!-- 슬라이드 끝 -->
-    <footer class="text-center">
-        <p>Bootstrap Theme Made By <a href="https://www.w3schools.com">www.w3schools.com</a></p>
+    <footer class="elppafooter footer-copyright text-center py-3">
+        <a href="http://www.nswin.co.kr">PC화면</a>
     </footer>
+
+
     <script src="hambugers.js"></script>
 </body>
 
