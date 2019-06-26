@@ -3,7 +3,7 @@ function slidopen(linkid) {
         location.href = "http://nec.mooviccom.co.kr/images/sub/projector_hitachi.jpg";
     }
     if (linkid == "nec") {
-        location.href = "http://nec.mooviccom.co.kr/images/sub/projector_nec.jpg";
+        location.href = "nec.html";
     }
 }
 

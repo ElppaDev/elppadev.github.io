@@ -1,3 +1,13 @@
+
+
+.slidimg {
+    width: 100%;
+}
+
+.cent {
+    vertical-align: middle;
+}
+
 .elppafooter {
     text-align: center;
     background-color: black;
@@ -63,9 +73,7 @@ h4 {
     color: #fff !important;
 }
 
-@media (max-width: 600px) {
-
-}
+@media (max-width: 600px) {}
 
 .bg-1 {
     background: #2d2d30;

@@ -673,11 +673,11 @@ th {
 }
 
 .glyphicon-chevron-left:before {
-    content: "\e079"
+    content: "<"
 }
 
 .glyphicon-chevron-right:before {
-    content: "\e080"
+    content: ">"
 }
 
 .glyphicon-plus-sign:before {
@@ -5670,13 +5670,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
     border-color: #ddd
 }
 
-.navbar-default .navbar-toggle:focus,
-.navbar-default .navbar-toggle:hover {
-    background-color: #ddd
-}
-
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: #888
+    background-color: white;
 }
 
 .navbar-default .navbar-collapse,
