@@ -21,7 +21,6 @@
 
 .product {
     max-width: 100%;
-    border-radius: 20px;
     display: block;
     margin: 0px auto;
 }
@@ -171,7 +170,7 @@ h4,
 }
 
 .navbar-nav li a:hover {
-    color: red !important;
+    color: white !important;
     background-color: black !important;
 }
 

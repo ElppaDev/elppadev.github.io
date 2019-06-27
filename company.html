@@ -8,20 +8,27 @@
     <title>엔에스테크윈 모바일 웹앱</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="elppacss.css">
+    <link rel="stylesheet" href="bootstrap.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="elppacss.css">
     <link rel="stylesheet" type="text/css" href="hamburgers.min.css">
     <!--     -->
 
     <!-- JavaScript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="elppajs.js"></script>
+    <script src="imageMapResizer.min.js"></script>
     <!--            -->
 
+    <script>
+        $(document).ready(function() {
+            $('map').imageMapResize();
+        });
+
+    </script>
 </head>
 
 <body>
@@ -29,7 +36,7 @@
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
-                <div class="navbar-toggle hamburger hamburger--spring-r hammenu" data-toggle="collapse" data-target="#myNavbar">
+                <div class="navbar-toggle hamburger hamburger--spring-r" data-toggle="collapse" data-target="#myNavbar">
                     <div class="hamburger-box">
                         <div class="hamburger-inner"></div>
                     </div>
@@ -49,43 +56,16 @@
         </div>
     </nav>
     <!-- 상단 메뉴 끝 -->
+    
+    <!-- 본문의 내용 시작 -->
+    <img class="product" src="http://nec.mooviccom.co.kr/images/sub/company_profile.jpg">
+    <!-- 본문의 내용 종료 -->
 
-
-    <!-- 슬라이드 시작 -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-        </ol>
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <img class="slidimg" src="http://nec.mooviccom.co.kr/images/main/main_visual01.jpg" alt="nec" onclick="slidopen('nec')">
-            </div>
-
-            <div class="item">
-                <img class="slidimg" src="http://nec.mooviccom.co.kr/images/main/main_visual02.jpg" alt="hita" onclick="slidopen('hita')">
-            </div>
-        </div>
-
-        <!-- Left and right controls -->
-        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        </a>
-        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        </a>
-    </div>
-    <!-- 메인 페이지 본문 부분 -->
-    <div id="mainpage">
-        
-    </div>
-    <!-- 메인 페이지 본문 부분 끝 -->
-
-    <!-- 슬라이드 끝 -->
     <footer class="text-center">
         주요 납품처 넣을곳
     </footer>
+
+
     <script src="hambugers.js"></script>
 </body>
 
