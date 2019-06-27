@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>엔에스테크윈 모바일 웹앱</title>
+    <title>엔에스테크윈㈜</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="bootstrap.css">
@@ -16,9 +16,9 @@
     <!--     -->
 
     <!-- JavaScript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="elppajs.js"></script>
     <script src="imageMapResizer.min.js"></script>
     <!--            -->
@@ -56,20 +56,36 @@
         </div>
     </nav>
     <!-- 상단 메뉴 끝 -->
-
+    
     <!-- 본문의 내용 시작 -->
-    <div>
-        <ul id="ulul">
-            <li class="companymenu"><a>엔에스테크윈㈜ 소개</a></li>
-            <li class="companymenu"><a>납품실적</a></li>
-            <li class="companymenu"><a>찾아오시는 길</a></li>
-            <li class="companymenu"><a>전국 AS센터</a></li>
-        </ul>
+    <ul class="nav nav-tabs">
+        <li class="active">
+            <a data-toggle="tab" href="#company1">엔에스테크윈㈜ 소개</a>
+        </li>
+        <li>
+            <a data-toggle="tab" href="#company2">납품실적</a>
+        </li>
+        <li>
+            <a data-toggle="tab" href="#company3">찾아오시는 길</a>
+        </li>
+        <li>
+            <a data-toggle="tab" href="#company4">전국 A/S센터</a>
+        </li>
+    </ul>
+    <div class="tab-content">
+        <div id="company1" class="tab-pane fade in active">
+            <img class="product" src="http://nec.mooviccom.co.kr/images/sub/company_profile.jpg">
+        </div>
+        <div id="company2" class="tab-pane fade">
+            <img class="product" src="http://nec.mooviccom.co.kr/images/sub/pf01.jpg">
+        </div>
+        <div id="company3" class="tab-pane fade">
+            <img class="product" src="http://nec.mooviccom.co.kr/images/sub/map.jpg">
+        </div>
+        <div id="company4" class="tab-pane fade">
+            <img class="product" src="http://nec.mooviccom.co.kr/images/sub/bgMap.jpg">
+        </div>
     </div>
-    <img class="product" src="http://nec.mooviccom.co.kr/images/sub/company_profile.jpg">
-    <img class="product" style="display: none;" src="http://nec.mooviccom.co.kr/images/sub/pf01.jpg">
-    <img class="product" style="display: none;" src="http://nec.mooviccom.co.kr/images/sub/map.jpg">
-    <img class="product" style="display: none;" src="http://nec.mooviccom.co.kr/images/sub/bgMap.jpg">
     <!-- 본문의 내용 종료 -->
 
     <footer class="text-center">
