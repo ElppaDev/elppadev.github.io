@@ -1,4 +1,17 @@
+#ulul{
+    text-align: center;
+    margin: 5px;
+    margin-left: -3%;
+}
 
+.companymenu{
+    display: inline-block;
+    padding-right:5%;
+}
+
+.companymenu > a:hover,.companymenu > a:focus{
+    color:red;
+}
 
 .slidimg {
     width: 100%;
