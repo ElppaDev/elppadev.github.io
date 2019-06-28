@@ -32,6 +32,11 @@ a:link {
     text-decoration: none;
 }
 
+footer > a{
+    color: darkgray;
+    text-decoration: none;
+}
+
 a:visited {
     color: darkgray;
     text-decoration: none;
