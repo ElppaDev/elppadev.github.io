@@ -1,3 +1,7 @@
+.navbar-nav > li > a{
+    font-size:15px;
+}
+
 .slidimg {
     width: 100%;
 }
