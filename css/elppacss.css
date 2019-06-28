@@ -1,3 +1,10 @@
+.underline{
+    border-bottom : 5px solid #d5d5d5;
+}
+.underline2{
+    border-bottom : 10px solid #d5d5d5;
+}
+
 .navbar-nav > li > a{
     font-size:15px;
 }
@@ -7,22 +14,13 @@
 }
 
 .footerfont{
-    font-size: 6px;
+    font-size: 13px;
+    color: black;
+    background-color: #d5d5d5;
 }
 
 .cent {
     vertical-align: middle;
-}
-
-.elppafooter {
-    text-align: center;
-    background-color: black;
-    margin-top: -40px;
-    height: 50px;
-    color: white;
-    font-size: 40px;
-    position:sticky;
-    z-index: 999;
 }
 
 .product {

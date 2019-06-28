@@ -13,3 +13,12 @@ function callbtn(key) {
         }
     }
 }
+
+function product(key){
+    if(key == "nec"){
+        location.replace('html/nec.html');
+    }else if(key == "hitachi"){
+        location.replace('html/hitachi.html');
+    }
+    return 0;
+}
