@@ -220,3 +220,22 @@ footer a:hover {
 textarea {
     resize: none;
 }
+
+@media (max-width:384px){
+    .navbar-brand{
+        font-size: 14px;
+    }
+}
+
+@media (max-width:375px){
+    .navbar-brand{
+        font-size: 13px;
+    }
+}
+
+
+@media (max-width:320px){
+    .navbar-brand{
+        font-size: 10px;
+    }
+}
