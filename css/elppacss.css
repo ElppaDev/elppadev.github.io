@@ -1,8 +1,8 @@
-.bottu:hover{
+.bottu:hover {
     border-bottom: 1px solid black;
 }
 
-#atv{
+#atv {
     border-bottom: 1px solid black;
 }
 
@@ -10,7 +10,7 @@
     font-size: 15px;
 }
 
-.bottmenu{
+.bottmenu {
     display: block;
 }
 
@@ -132,37 +132,44 @@ p {
     .navbar-brand {
         font-size: 10px;
     }
-    .bottmenu {
-    display: none;
-}
-}
 
-@media (max-width:384px) {
-    .navbar-brand {
-        font-size: 14px;
+    .bottmenu {
+        display: none;
     }
-    .bottmenu{
-    display: none;
-}
 }
 
 @media (max-width:375px) {
     .navbar-brand {
         font-size: 13px;
     }
-    .bottmenu{
-    display: none;
-}
-}
 
-@media (min-width:768px){
-    .navbar-brand{
-        display:none;
+    .bottmenu {
+        display: none;
     }
 }
 
-@media (min-width:970px){
-    .navbar-brand{
-        display:block;
+@media (max-width:384px) {
+    .navbar-brand {
+        font-size: 14px;
+    }
+
+    .bottmenu {
+        display: none;
+    }
+
+    #bottmenu2 {
+        font-size:10px;
+    }
+}
+
+@media (min-width:768px) {
+    .navbar-brand {
+        display: none;
+    }
+}
+
+@media (min-width:970px) {
+    .navbar-brand {
+        display: block;
     }
 }
