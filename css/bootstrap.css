@@ -5423,7 +5423,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
     #bottmenu2 {
         display: block;
         /* 하단 메뉴 나타남(모바일) */
-        font-size: 15px;
+        font-size: 17px;
     }
 
     .navbar-nav .open .dropdown-menu .dropdown-header,

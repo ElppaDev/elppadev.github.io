@@ -1,9 +1,13 @@
-.bottu:hover {
+
+
+#bottmenu2{
+    border-top: 1px solid black;
     border-bottom: 1px solid black;
 }
 
-#atv {
-    border-bottom: 1px solid black;
+.bottu:hover,#atv{
+    background-color: black;
+    color:white
 }
 
 .nav-tabs > li > a {
@@ -49,26 +53,10 @@
     width: 100%;
 }
 
-a:link {
+a:link,a:visited,a:hover,footer > a,a{
     color: black;
     text-decoration: none;
 }
-
-footer > a {
-    color: black;
-    text-decoration: none;
-}
-
-a:visited {
-    color: black;
-    text-decoration: none;
-}
-
-a:hover {
-    color: black;
-    text-decoration: none;
-}
-
 
 body {
     font: 20px Montserrat, sans-serif;
@@ -114,8 +102,8 @@ p {
 }
 
 .navbar {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 0px; /* 네비바 넓이 */
+    padding-bottom: 0px;
     border: 0;
     border-radius: 0;
     margin-bottom: 0;
