@@ -8,27 +8,20 @@
     <title>엔에스테크윈㈜</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/w3.css">
+    <link rel="stylesheet" href="css/w3.css">
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="../css/elppacss.css">
-    <link rel="stylesheet" type="text/css" href="../css/hamburgers.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/elppacss.css">
+    <link rel="stylesheet" type="text/css" href="css/hamburgers.min.css">
     <!--     -->
 
     <!-- JavaScript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../js/elppajs.js"></script>
-    <script type="text/javascript" src="../js/imageMapResizer.min.js"></script>
-    <script type="text/jscript" src="../js/newnec.js"></script>
+    <script type="text/javascript" src="js/elppajs.js"></script>
     <!--            -->
 
-    <script>
-        $(document).ready(function() {
-            $('map').imageMapResize();
-        });
-    </script>
 </head>
 
 <body>
@@ -36,17 +29,17 @@
     <nav class="navbar navbar-default">
         <div class="container">
             <div class="navbar-header">
+                <img class="navbar-logo" href="./index.html" src="img/logo.png">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="../index.html"><img class="navbar-logo" src="../img/logo.png"></a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="/html/nec.html">NEC PROJECTOR</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="http://www.nswin.co.kr/product/projector_nec.asp">NEC PROJECTOR</a></li>
                     <li><a href="/html/hitachi.html">HITACHI PROJECTOR</a></li>
                     <li><a href="https://pf.kakao.com/_xbDTxbj/chat">카카오톡 문의</a></li>
                     <li><a onclick="callbtn(1644)">전화 문의</a></li>
@@ -56,34 +49,29 @@
         </div>
     </nav>
 
-    <div class="w3-bar w3-white" id="bottmenu">
-        <a class="w3-bar-item bottu" href="../index.html">홈</a>
-        <a class="w3-bar-item bottu" href="/html/product.html" id="atv" id="atv">제품 소개</a>
+
+    <div class="w3-bar w3-white" id="bottmenu2">
+        <a class="w3-bar-item bottu" id="atv">홈</a>
+        <a class="w3-bar-item bottu" href="html/product.html">제품 소개</a>
         <a class="w3-bar-item bottu" href="http://nec.mooviccom.co.kr/product/projector_event.asp">이벤트</a>
-        <a class="w3-bar-item bottu" href="/html/company.html">회사 소개</a>
+        <a class="w3-bar-item bottu" href="html/company.html">회사 소개</a>
         <a class="w3-bar-item bottu" href="tel:16440155">문의</a>
     </div>
     <!-- 상단 메뉴 끝 -->
 
-    <!-- 본문의 내용 시작 -->
+    <!-- 메인 페이지 본문 부분 -->
+    <div id="mainpage">
+        <img src="img/nec1.jpg" style="width:100%">
+        <img src="img/hitachi1.jpg" style="width:100%">
+    </div>
+    <!-- 메인 페이지 본문 부분 끝 -->
 
-    <img class="product" src="http://nec.mooviccom.co.kr/images/sub/projector_nec.jpg" usemap="#Map" border="0">
-    <map name="Map" id="Map">
-        <!-- 신규 제품 좌표 추가는 js폴더의 newnec.js 에서 추가 해주세요! -->
-    </map>
-
-
-
-
-    <!-- 본문의 내용 종료 -->
-
+    <!-- 슬라이드 끝 -->
     <footer class="footerfont text-center">
         <strong>엔에스테크윈 주식회사</strong><br>
-        Tel : 1644-0155 <span>&nbsp;I&nbsp;</span> 032-328-1721 <span>&nbsp;I&nbsp;</span> E-mail : nec@necmall.co.kr
+        <a onclick="callbtn(1644)">1644-0155</a> <span>&nbsp;I&nbsp;</span> <a onclick="callbtn(328)">032-328-1721</a><br>E-mail : <a href="mailto:nec@necmall.co.kr">nec@necmall.co.kr</a>
     </footer>
-
-
-    <script type="text/javascript" src="../js/hambugers.js"></script>
+    <script type="text/javascript" src="js/hambugers.js"></script>
 </body>
 
 </html>

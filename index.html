@@ -20,6 +20,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/elppajs.js"></script>
+    <script type="text/javascript" src="js/imageMapResizer.min.js"></script>
+    <script type="text/jscript" src="js/newindex.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('map').imageMapResize();
+        });
+    </script>
     <!--            -->
 
 </head>
@@ -29,17 +37,17 @@
     <nav class="navbar navbar-default">
         <div class="container">
             <div class="navbar-header">
+                <a href="./index.html"><img class="navbar-logo" src="img/logo.png"></a>
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="./index.html">엔에스테크윈</a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="/html/nec.html">NEC PROJECTOR</a></li>
+                    <li><a href="http://www.nswin.co.kr/product/projector_nec.asp">NEC PROJECTOR</a></li>
                     <li><a href="/html/hitachi.html">HITACHI PROJECTOR</a></li>
                     <li><a href="https://pf.kakao.com/_xbDTxbj/chat">카카오톡 문의</a></li>
                     <li><a onclick="callbtn(1644)">전화 문의</a></li>
@@ -56,30 +64,50 @@
         <a class="w3-bar-item bottu" href="html/company.html">회사 소개</a>
         <a class="w3-bar-item bottu" href="tel:16440155">문의</a>
     </div>
-    <div class="w3-bar w3-white" id="bottmenu2">
-        <a class="w3-bar-item bottu" id="atv">홈</a>
-        <a class="w3-bar-item bottu" href="html/product.html">제품 소개</a>
-        <a class="w3-bar-item bottu" href="http://nec.mooviccom.co.kr/product/projector_event.asp">이벤트</a>
-        <a class="w3-bar-item bottu" href="html/company.html">회사 소개</a>
-        <a class="w3-bar-item bottu" href="tel:16440155">문의</a>
-    </div>
     <!-- 상단 메뉴 끝 -->
 
     <!-- 메인 페이지 본문 부분 -->
     <div id="mainpage">
-        <img class="slidimg underline" src="http://nec.mooviccom.co.kr/images/main/main_visual01.jpg" alt="nec" onclick="location.replace('html/nec.html');">
-        <img class="slidimg underline2" src="http://nec.mooviccom.co.kr/images/main/main_visual02.jpg" alt="hita" onclick="location.replace('html/hitachi.html');">
-        <img class="slidimg underline" src="img/nec1.jpg" alt="hita" onclick="location.replace('http://www.nswin.co.kr/product/event_nec.asp');">
-        <img class="slidimg" src="img/hitachi1.jpg" alt="hita" onclick="location.replace('http://www.nswin.co.kr/product/event_hitachi.asp');">
-    </div>
-    <!-- 메인 페이지 본문 부분 끝 -->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li class="#myCarousel" data-slide-to="0" class="active"></li>
+                <li class="#myCarousel" data-slide-to="1" class="active"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="img/main%20nec.jpg" alt="nec" style="width:100%;">
+                </div>
 
-    <!-- 슬라이드 끝 -->
-    <footer class="footerfont text-center">
-        <strong>엔에스테크윈 주식회사</strong><br>
-        <a onclick="callbtn(1644)">1644-0155</a> <span>&nbsp;I&nbsp;</span> <a onclick="callbtn(328)">032-328-1721</a><br>E-mail : <a href="mailto:nec@necmall.co.kr">nec@necmall.co.kr</a>
-    </footer>
-    <script type="text/javascript" src="js/hambugers.js"></script>
+                <div class="item">
+                    <img src="img/main%20hitachi.jpg" alt="hitachi" style="width:100%;">
+                </div>
+
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            
+            <div>
+                <img class="product" usemap="#Map" src="img/center.jpg">
+                <map name="Map" id="Map">
+                </map>
+            </div>
+            
+        </div>
+    </div>
+        <!-- 메인 페이지 본문 부분 끝 -->
+
+        <!-- 슬라이드 끝 -->
+        <footer class="footerfont text-center">
+            <strong>엔에스테크윈 주식회사</strong><br>
+            <a onclick="callbtn(1644)">1644-0155</a> <span>&nbsp;I&nbsp;</span> <a onclick="callbtn(328)">032-328-1721</a><br>E-mail : <a href="mailto:nec@necmall.co.kr">nec@necmall.co.kr</a>
+        </footer>
+        <script type="text/javascript" src="js/hambugers.js"></script>
 </body>
 
 </html>
