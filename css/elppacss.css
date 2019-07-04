@@ -1,16 +1,73 @@
 .navbar-logo {
-    width: 50%;
+    width: 100%;
     padding-top: 2%;
     position: fixed;
     left: 25%;
+}
+
+#footerlogo{
+    width: 40px;
+}
+
+#myModal{
+    color:black;
+}
+
+.rg{
+    float: right;
+    position: relative;
+    right: 15px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.kakao{
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+    z-index: 100;
+    animation-iteration-count: infinite;
+    animation-delay: .11s;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-name: kakaoicon;
+}
+
+.kakao > a{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../img/kakao.png);
+    background-size: 50px 50px;
+    border-radius: 50px;
+}
+
+@keyframes kakaoicon {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(10px);
+    }
+}
+
+#box{
+    position: relative;
+    margin-left: 20px;
+    top:10px;
 }
 
 #bottmenu {
     border-top: 1px solid #dddddd;
     border-bottom: 1px solid #dddddd;
     font-size: 12px;
-    padding-left: 9%;
+    padding-left: 7%;
     display: block;
+}
+
+.carousel-inner{
+    border-bottom: 3px solid #dddddd;
 }
 
 .bottu:hover,
@@ -20,25 +77,31 @@
 }
 
 .nav-tabs > li > a {
-    font-size: 15px;
+    font-size: 12px;
 }
 
 .navbar-nav > li > a {
     font-size: 15px;
 }
 
-.mySlides {
+.mySlides,
+.product {
     width: 100%;
 }
 
 .footerfont {
-    font-size: 13px;
+    font-size: 10px;
     color: black;
-    background-color: #d5d5d5;
+    height: 145px;
+    background-color: #e8e8e8;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
 }
 
-.product {
-    width: 100%;
+footerfont>p,footerfont z> a{
+    position: relative;
+    left: 20px;
+    top:10px;
 }
 
 a:link,
@@ -124,69 +187,68 @@ p {
     }
 
 
-@media (min-width:360px) {
-    #bottmenu {
-        border-top: 1px solid #dddddd;
-        border-bottom: 1px solid #dddddd;
-        font-size: 10px;
-        padding-left: 6.5%;
+    @media (min-width:360px) {
+        #bottmenu {
+            border-top: 1px solid #dddddd;
+            border-bottom: 1px solid #dddddd;
+            font-size: 10px;
+            padding-left: 6.5%;
+        }
+
+        .navbar-logo {
+            top: 0%;
+        }
     }
 
-    .navbar-logo {
-        top: 0%;
-    }
-}
+    @media (min-width:375px) {
+        #bottmenu {
+            border-top: 1px solid #dddddd;
+            border-bottom: 1px solid #dddddd;
+            font-size: 10px;
+            padding-left: 8%;
+        }
 
-@media (min-width:375px) {
-    #bottmenu {
-        border-top: 1px solid #dddddd;
-        border-bottom: 1px solid #dddddd;
-        font-size: 10px;
-        padding-left: 8%;
+        .navbar-logo {}
     }
 
-    .navbar-logo {
-        
+    @media (min-width:384px) {
+        #bottmenu {
+            font-size: 10px;
+            padding-left: 50px;
+        }
     }
-}
 
-@media (min-width:384px) {
-    #bottmenu {
-        font-size: 10px;
-        padding-left: 13%;
+    @media (min-width:500px) {
+        .navbar-logo {
+            width: 50%;
+            left: 25%;
+            top: -10%;
+        }
     }
-}
 
-@media (min-width:500px) {
-    .navbar-logo {
-        width: 50%;
-        left: 25%;
-        top: -10%;
-    }
-}
+    @media (min-width:600px) {
+        .navbar-logo {
+            width: 30%;
+            left: 2%;
+            top: -0.2%;
+        }
 
-@media (min-width:600px) {
-    .navbar-logo {
-        width: 30%;
-        left: 2%;
-        top: -0.2%;
+        #bottmenu {
+            font-size: 15px;
+        }
     }
-    #bottmenu{
-        font-size: 15px;
-    }
-}
 
-@media (min-width:768px) {
-    .navbar-logo {
-        display: none;
+    @media (min-width:768px) {
+        .navbar-logo {
+            display: none;
+        }
     }
-}
 
-@media (min-width:970px) {
-    .navbar-logo {
-        width: 20%;
-        left: 2%;
-        top: -2%;
-        display: block;
+    @media (min-width:970px) {
+        .navbar-logo {
+            width: 20%;
+            left: 2%;
+            top: -2%;
+            display: block;
+        }
     }
-}

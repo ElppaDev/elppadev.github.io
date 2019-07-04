@@ -27,39 +27,39 @@
 
 <body>
     <!-- 상단 메뉴 시작 -->
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
+                <a href="../index.html"><img class="navbar-logo" src="../img/logo.png"></a>
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="../index.html"><img class="navbar-logo" src="../img/logo.png"></a>
             </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="/html/nec.html">NEC PROJECTOR</a></li>
-                    <li><a href="/html/hitachi.html">HITACHI PROJECTOR</a></li>
-                    <li><a href="https://pf.kakao.com/_xbDTxbj/chat">카카오톡 문의</a></li>
-                    <li><a onclick="callbtn(1644)">전화 문의</a></li>
-                    <li><a href="/html/company.html">회사 소개</a></li>
-                </ul>
-            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/../index.html">Home</a></li>
+                <li><a href="/html/nec.html">NEC PROJECTOR</a></li>
+                <li><a href="../html/hitachi.html">HITACHI PROJECTOR</a></li>
+                <li><a href="https://pf.kakao.com/_xbDTxbj/chat">카카오톡 문의</a></li>
+                <li><a onclick="callbtn(1644)">전화 문의</a></li>
+                <li><a href="../html/company.html">회사 소개</a></li>
+            </ul>
         </div>
     </nav>
 
-    <div class="w3-bar w3-white" id="bottmenu">
-        <a class="w3-bar-item bottu" href="../index.html">홈</a>
-        <a class="w3-bar-item bottu" href="/html/product.html">제품 소개</a>
-        <a class="w3-bar-item bottu" href="http://nec.mooviccom.co.kr/product/projector_event.asp">이벤트</a>
-        <a class="w3-bar-item bottu" id="atv">회사 소개</a>
-        <a class="w3-bar-item bottu" href="tel:16440155">문의</a>
-    </div>
     <!-- 상단 메뉴 끝 -->
 
     <!-- 본문의 내용 시작 -->
+    <div class="w3-bar w3-white" id="bottmenu" style="margin-top:50px">
+        <a class="w3-bar-item bottu" href="../index.html">홈</a>
+        <a class="w3-bar-item bottu" href="product.html">제품 소개</a>
+        <a class="w3-bar-item bottu" href="/http://nec.mooviccom.co.kr/product/projector_event.asp">이벤트</a>
+        <a class="w3-bar-item bottu" id="atv" href="company.html">회사 소개</a>
+        <a class="w3-bar-item bottu" href="tel:16440155">문의</a>
+    </div>
     <ul class="nav nav-tabs">
         <li class="active">
             <a data-toggle="tab" href="#company1">회사 소개</a>
@@ -88,11 +88,19 @@
             <img class="product" src="http://nec.mooviccom.co.kr/images/sub/bgMap.jpg" usemap="#Map">
         </div>
     </div>
+
+    <div class="kakao">
+        <a href="https://pf.kakao.com/_xbDTxbj/chat"></a>
+    </div>
     <!-- 본문의 내용 종료 -->
 
-    <footer class="footerfont text-center">
-        <strong>엔에스테크윈 주식회사</strong><br>
-        Tel : 1644-0155 <span>&nbsp;I&nbsp;</span> 032-328-1721 <span>&nbsp;I&nbsp;</span> E-mail : nec@necmall.co.kr
+    <footer class="footerfont">
+        <div id="box">
+            <p><img id="footerlogo" src="../img/footerlogo.png"><br>
+                <b style="font-size:12px;">엔에스테크윈 ㈜</b></p>
+            대표 : 김기영&nbsp;I&nbsp;사업자번호 130-86-27037&nbsp;I&nbsp;통신판매 2007-469<br>
+            고객센터(전국) <b><a href="tel:16440155">1644 - 0155</a></b>&nbsp; I &nbsp;e-mail : <a href="mailto:nec@necmall.co.kr">nec@necmall.co.kr</a><span class="rg"><a href="http://www.nswin.co.kr">&nbsp;&nbsp;PC버전&nbsp;&nbsp;</a></span>
+        </div>
     </footer>
 
 
