@@ -1,14 +1,13 @@
 .navbar-logo {
     position: fixed;
-    width: 100%;
     left: 25%;
 }
 
-#footerlogo{
+#footerlogo {
     width: 40px;
 }
 
-.rg{
+.rg {
     float: right;
     position: relative;
     right: 15px;
@@ -16,9 +15,9 @@
     border-radius: 3px;
 }
 
-.kakao{
+.kakao {
     position: fixed;
-    bottom: 60px;
+    top: 80%;
     right: 20px;
     z-index: 100;
     animation-iteration-count: infinite;
@@ -29,7 +28,7 @@
     animation-name: kakaoicon;
 }
 
-.kakao > a{
+.kakao > a {
     display: block;
     width: 50px;
     height: 50px;
@@ -42,15 +41,16 @@
     0% {
         transform: translateX(0px);
     }
+
     100% {
         transform: translateX(10px);
     }
 }
 
-#box{
+#box {
     position: relative;
     margin-left: 20px;
-    top:10px;
+    top: 10px;
 }
 
 #bottmenu {
@@ -61,7 +61,7 @@
     display: block;
 }
 
-.carousel-inner{
+.carousel-inner {
     border-bottom: 3px solid #dddddd;
 }
 
@@ -93,10 +93,11 @@
     border-bottom-right-radius: 2em;
 }
 
-footerfont>p,footerfont z> a{
+footerfont > p,
+footerfont z > a {
     position: relative;
     left: 20px;
-    top:10px;
+    top: 10px;
 }
 
 a:link,
@@ -170,78 +171,78 @@ p {
 
 
 @media (min-width:320px) {
+
+    .navbar-logo {
+        width: 50%;
+        top: 2%;
+    }
+
     #bottmenu {
         font-size: 10px;
         padding-left: 0.5%;
     }
+}
+
+
+@media (min-width:360px) {
+    #bottmenu {
+        font-size: 10px;
+        padding-left: 6.5%;
+    }
 
     .navbar-logo {
-        width: 50%;
-        left: 25%;
+        top: 1.5%;
+    }
+}
+
+@media (min-width:375px) {
+    #bottmenu {
+        font-size: 10px;
+        padding-left: 8%;
+    }
+
+    .navbar-logo {
         top: 1%;
     }
+}
 
+@media (min-width:384px) {
+    #bottmenu {
+        font-size: 10px;
+        padding-left: 50px;
+    }
+}
 
-    @media (min-width:360px) {
-        #bottmenu {
-            border-top: 1px solid #dddddd;
-            border-bottom: 1px solid #dddddd;
-            font-size: 10px;
-            padding-left: 6.5%;
-        }
+@media (min-width:500px) {
+    .navbar-logo {
+        top: 0%;
+    }
+}
 
-        .navbar-logo {
-            top: 0%;
-        }
+@media (min-width:600px) {
+    .navbar-logo {
+        width: 45%;
+        left: 30%;
+        top: 0%;
     }
 
-    @media (min-width:375px) {
-        #bottmenu {
-            border-top: 1px solid #dddddd;
-            border-bottom: 1px solid #dddddd;
-            font-size: 10px;
-            padding-left: 8%;
-        }
-
-        .navbar-logo {}
+    #bottmenu {
+        font-size: 15px;
     }
+}
 
-    @media (min-width:384px) {
-        #bottmenu {
-            font-size: 10px;
-            padding-left: 50px;
-        }
+@media (min-width:767px) {
+    .navbar-logo {
+        display: none;
     }
+}
 
-    @media (max-width:500px) {
-        .navbar-logo {
-            top: 1%;
-        }
+@media (min-width:970px) {
+    .navbar-logo {
+        width: 20%;
+        left: 2%;
+        top: 1%;
+        ;
+        display: block;
     }
-
-    @media (min-width:600px) {
-        .navbar-logo {
-            width: 45%;
-            left: 30%;
-            top: 0%;
-        }
-
-        #bottmenu {
-            font-size: 15px;
-        }
-    }
-
-    @media (min-width:767px) {
-        .navbar-logo {
-            display: none;
-        }
-    }
-
-    @media (min-width:970px) {
-        .navbar-logo {
-            width: 20%;
-            left: 2%;
-            top: 1%;;
-            display: block;
-        }
-    }
+}
