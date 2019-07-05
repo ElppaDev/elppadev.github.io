@@ -1,16 +1,11 @@
 .navbar-logo {
-    width: 100%;
-    padding-top: 2%;
     position: fixed;
+    width: 100%;
     left: 25%;
 }
 
 #footerlogo{
     width: 40px;
-}
-
-#myModal{
-    color:black;
 }
 
 .rg{
@@ -218,19 +213,17 @@ p {
         }
     }
 
-    @media (min-width:500px) {
+    @media (max-width:500px) {
         .navbar-logo {
-            width: 50%;
-            left: 25%;
-            top: -10%;
+            top: 1%;
         }
     }
 
     @media (min-width:600px) {
         .navbar-logo {
-            width: 30%;
-            left: 2%;
-            top: -0.2%;
+            width: 45%;
+            left: 30%;
+            top: 0%;
         }
 
         #bottmenu {
@@ -238,7 +231,7 @@ p {
         }
     }
 
-    @media (min-width:768px) {
+    @media (min-width:767px) {
         .navbar-logo {
             display: none;
         }
@@ -248,7 +241,7 @@ p {
         .navbar-logo {
             width: 20%;
             left: 2%;
-            top: -2%;
+            top: 1%;;
             display: block;
         }
     }

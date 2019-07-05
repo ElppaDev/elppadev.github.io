@@ -10,8 +10,8 @@ $(function () {
         "148,108,271,193",
         "274,107,412,193",
         "416,107,541,193",
-        "145,207,273,293",
-        "276,207,405,291",
+        "145,209,252,299",
+        "281,209,390,301",
         "409,207,542,292"
     ]; //신규 제품 등록시 좌표를 등록해주세요
     productlink = [
@@ -22,7 +22,7 @@ $(function () {
         "http://www.nswin.co.kr/product/event_hitachi.asp",
         "http://www.hitachidigitalmedia.com/en-gb/throw-distance-calculator",
         "/html/company.html",
-        "https://pf.kakao.com/_xbDTxbj/chat",
+        "/html/call.html",
         "tel:16440155"
     ]; //신규 제품 등록시 링크를 등록해주세요
     $.each(coords, function (index) {

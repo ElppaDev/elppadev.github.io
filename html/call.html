@@ -19,7 +19,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/imageMapResizer.min.js"></script>
     <script type="text/javascript" src="../js/elppajs.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('map').imageMapResize();
+        });
+
+    </script>
     <!--            -->
 
 
@@ -52,18 +59,24 @@
     <!-- 상단 메뉴 끝 -->
     <div class="w3-bar w3-white" id="bottmenu" style="margin-top:50px">
         <a class="w3-bar-item bottu" href="../index.html">홈</a>
-        <a class="w3-bar-item bottu" id="atv" href="product.html">제품 소개</a>
+        <a class="w3-bar-item bottu" href="product.html">제품 소개</a>
         <a class="w3-bar-item bottu" href="/http://nec.mooviccom.co.kr/product/projector_event.asp">이벤트</a>
         <a class="w3-bar-item bottu" href="company.html">회사 소개</a>
         <a class="w3-bar-item bottu" href="tel:16440155">문의</a>
     </div>
     <!-- 본문의 내용 시작 -->
 
-    <img class="product" src="http://nec.mooviccom.co.kr/images/sub/project_enent.jpg">
-
-    <div class="kakao">
-        <a href="https://pf.kakao.com/_xbDTxbj/chat"></a>
-    </div>
+    <img class="product" src="../img/ex.png" usemap="#Map">
+    <map name="Map" id="Map">
+        <area shape="rect" coords="108,465,139,496" onclick="alert('아이언맨1 카카오톡');">
+        <area shape="rect" coords="146,465,176,495" onclick="alert('아이언맨1 전화');">
+        <area shape="rect" coords="412,465,441,495" onclick="alert('아이언맨2 카카오톡');">
+        <area shape="rect" coords="450,466,479,495" onclick="alert('아이언맨2 전화');">
+        <area shape="rect" coords="109,965,138,996" onclick="alert('아이언맨3 카카오톡');">
+        <area shape="rect" coords="146,965,176,995" onclick="alert('아이언맨3 전화');">
+        <area shape="rect" coords="411,966,441,996" onclick="alert('아이언맨4 카카오톡');">
+        <area shape="rect" coords="450,965,479,995" onclick="alert('아이언맨4 전화');">
+    </map>
 
     <!-- 본문의 내용 종료 -->
 
