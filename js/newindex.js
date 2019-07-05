@@ -3,13 +3,13 @@ var productlink; //제품 링크
 var area = ['<area shape="rect" coords="', '" href="', '"/>'];
 
 $(function () {
-    /*var fileter = "win16|win32|win64|mac|macintel";
+    var fileter = "win16|win32|win64|mac|macintel";
     console.log("함수 수행");
     if (fileter.indexOf(navigator.platform.toLowerCase()) < 0) {
         console.log('모바일로 접속했뉑!');
     } else {
         location.replace('http://www.nswin.co.kr');
-    }*/
+    }
     coords = [
         "143,3,272,95",
         "276,3,411,95",
